@@ -2,7 +2,7 @@ const {randomUUID} = require('crypto');
 const express = require('express');
 const fs = require('fs');
 
-const router = express.router();
+const router = express.Router();
 function displayNotes(){
     return JSON.parse(fs.readFileSync('db/db.json'))
 }
